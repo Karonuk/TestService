@@ -1,0 +1,28 @@
+<!-- <<form (submit)="submitForm()" class=" example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your email</mat-label>
+    <input matInput placeholder="pat@example.com" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" required>
+    <mat-error *ngIf="password.invalid">Заполните поле</mat-error>
+  </mat-form-field>
+  <button type="submit" mat-flat-button color="primary">Basic</button>
+</form> -->
+<form (ngSubmit)="submitForm()" [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your email</mat-label>
+    <input matInput formControlName="email" placeholder="pat@example.com">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+  </mat-form-field>
+  <button [disabled]="form.invalid"  type="submit" mat-flat-button color="primary">Basic</button>
+  <div class="equipment-email__error-message"
+           *ngIf="form.invalid && (form.dirty || form.touched)">
+        Check your input
+  </div>
+</form>

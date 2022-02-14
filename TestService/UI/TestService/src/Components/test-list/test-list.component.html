@@ -1,0 +1,16 @@
+<div role="list">
+  <div class="test-block" *ngFor="let test of Tests">
+    <div class="test-short">
+      <span role="listitem">{{test.name}}</span>
+      <button class="start-button" (click)="toggleTest(test.id)" id="{{test.id}}"   mat-flat-button color="primary">Start</button>
+    </div>
+    <ng-container  *ngIf="test.isVisible">
+      <form [formGroup]="form">
+        <p>{{test.description}}</p>
+        <label for="checkBox">"I agree to start</label>
+        <input id="checkBox" type="checkbox" formControlName="checkbox" required>
+        <button [disabled]="form.invalid" mat-flat-button color="primary" [routerLink]="['/questions',test.id]">Proceed</button>
+      </form>
+    </ng-container>
+  </div>
+</div>

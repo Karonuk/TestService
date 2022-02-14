@@ -1,0 +1,4 @@
+.vs
+TestService/bin
+TestService/UI/TestService/.angular
+TestService/UI/TestService/node_modules

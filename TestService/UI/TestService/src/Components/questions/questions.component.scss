@@ -1,0 +1,39 @@
+
+.text{
+  font-size: large;
+  border: 10px double grey;
+  padding-left: 0.5rem;
+}
+.answer{
+  display: flex;
+  align-items: center;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+}
+.checkbox-round:checked{
+  background-color: black;
+}
+button{
+  margin-top: 0.5rem;
+}
+label{
+  font-size: large;
+}

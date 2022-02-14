@@ -1,0 +1,13 @@
+<div class="main" *ngIf="!isFinished">
+  <p class="text">{{questions[index].questionText}}</p>
+<div class="anwser" *ngFor="let answer of questions[index].answers">
+  <label for="{{answer.id}}">{{answer.text}}</label>
+  <input class="checkbox-round" [disabled]="answer.isChecked" [checked]="answer.isChecked" (change)="onChange(answer.id)" id="{{answer.id}}" type="checkbox"  >
+</div>
+<button [disabled]="!isAnswerChoosen" *ngIf="index<maxCount-1" (click)="clickNext()" mat-flat-button color="primary" >Next question</button>
+<button [disabled]="!isAnswerChoosen" (click)="clickFinish()" *ngIf="index===maxCount-1" mat-flat-button color="primary" > Finish test</button>
+</div>
+<ng-container *ngIf="isFinished">
+  <app-result-screen [result]="Result"></app-result-screen>
+</ng-container>
+
