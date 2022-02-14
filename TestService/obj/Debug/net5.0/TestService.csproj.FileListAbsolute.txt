@@ -60,3 +60,8 @@ C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\Swashb
 C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Карон\source\repos\TestService\TestService\obj\Debug\net5.0\TestService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\UI\TestService\angular.json
+C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\UI\TestService\package.json
+C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\UI\TestService\tsconfig.app.json
+C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\UI\TestService\tsconfig.json
+C:\Users\Карон\source\repos\TestService\TestService\bin\Debug\net5.0\UI\TestService\tsconfig.spec.json
